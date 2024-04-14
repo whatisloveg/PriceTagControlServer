@@ -1,4 +1,4 @@
-Для раввертывания на сервере:
+![image](https://github.com/whatisloveg/PriceTagControlServer/assets/95077912/56b13bcc-7fc3-42ca-b784-da034f18cd7e)Для раввертывания на сервере:
 1) sudo apt update
 2) sudo apt install docker.io
 3) sudo apt install docker-compose
@@ -15,6 +15,11 @@ https://github.com/whatisloveg/PriceTagControlAI
 
 Репозиторий с WEB приложением:
 https://github.com/whatisloveg/PriceTagControlWEb
+
+
+последний коммит в репозиторий был в 10:28
+![image](https://github.com/whatisloveg/PriceTagControlServer/assets/95077912/eb38d832-692a-4d58-b5af-110447d3b3ed)
+
 
 
 
