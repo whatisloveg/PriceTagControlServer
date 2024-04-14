@@ -1,0 +1,28 @@
+version: '3.4'
+
+services:
+  pricetagcontrolserver:
+    image: ${DOCKER_REGISTRY-}pricetagcontrolserver
+    build:
+      context: .
+      dockerfile: PriceTagControlServer/Dockerfile
+    ports:
+      - "80:80"
+    depends_on:
+      - "postgres_db"
+    environment:
+      ASPNETCORE_URLS: http://+:80
+    command: bash -c "dotnet ef database update && dotnet run"
+  postgres_db:
+    container_name: postgres
+    image: postgres:latest
+    environment:
+        POSTGRES_USER: postgres
+        POSTGRES_PASSWORD: novQ@Z}p~6V8dG5
+        POSTGRES_DB: pricetagconrol
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+volumes:
+  postgres-data:

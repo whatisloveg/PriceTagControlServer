@@ -2,6 +2,8 @@ using Microsoft.EntityFrameworkCore;
 using PriceTagControlServer.ApplictaionContext;
 using PriceTagControlServer.ApplictaionContext.Repositories.Interfeces;
 using PriceTagControlServer.ApplictaionContext.Repositories;
+using PriceTagControlServer.Services.Interfeces;
+using PriceTagControlServer.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,6 +25,7 @@ builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IProductCategoryRepository, ProductCategoryRepository>();
 builder.Services.AddScoped<IShopRepository, ShopRepository>();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped<ISenderToAIService, SenderToAIService>();
 
 var app = builder.Build();
 
