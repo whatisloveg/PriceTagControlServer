@@ -11,6 +11,7 @@ https://github.com/DFimp/project_react/tree/main
 Для тестирования на IOS и Android использовать пиложение Expo Go
 
 Репозиторий с нейронной сетью:
+https://github.com/whatisloveg/PriceTagControlAI
 
 Репозиторий с WEB приложением:
 https://github.com/whatisloveg/PriceTagControlWEb
